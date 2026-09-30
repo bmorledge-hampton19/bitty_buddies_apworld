@@ -1,4 +1,7 @@
 # Bitty Buddies Archipelago
+This is the standalone Bitty Buddies Archipelago repository.
+If you're looking for the full Bitty Buddies fork of the main archipelago repository, you can find it
+[here](https://github.com/bmorledge-hampton19/Archipelago/tree/bitty_buddies)
 
 ## What is Bitty Buddies?
 
@@ -10,7 +13,7 @@ in their own game, but with some experimentation, you'll find that their true ta
 ## Where can I play Bitty Buddies?
 
 You can play Bitty Buddies for free at https://mr-dr-bean.itch.io/bitty-buddies. The game can be played in-browser
-(even on a mobile device!), or you can download it for Windows, MacOS, or Linux.
+(even on a mobile device), or you can download it for Windows, MacOS, or Linux.
 
 ## How do I install the Bitty Buddies APworld?
 
