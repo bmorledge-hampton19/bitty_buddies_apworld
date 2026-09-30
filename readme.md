@@ -45,7 +45,7 @@ for cooperative play, and progress should sync between everyone automatically.
 
 ## What does randomization do to this game?
 
-Buddy level ups, cartridge-specific bonus points, and optionally, buddy power increases, are randomized into the item pool. and random items are sent
+Buddy level ups, cartridge-specific bonus points, and optionally, buddy power increases, are randomized into the item pool, and random items are sent
 when you achieve goal scores in each cartridge or fulfill special "silly" or "skill" checks (see below).
 The buddy that you start with will also be randomized.
 
