@@ -16,13 +16,14 @@ You can play Bitty Buddies for free at https://mr-dr-bean.itch.io/bitty-buddies.
 
 First, make sure that you have downloaded the latest
 [Archipelago release](https://github.com/ArchipelagoMW/Archipelago/releases/latest).
-Then, download bitty_buddies.apworld from the [latest release](PLACEHOLDER)
+Then, download bitty_buddies.apworld from the
+[latest release](https://github.com/bmorledge-hampton19/bitty_buddies_apworld/releases/latest)
 and copy it into the /custom_worlds directory in your local archipelago folder.
 
 ## How do I create a config (yaml) file for this game?
 
 If you're familiar with editing yaml files by hand, you can use the "Bitty Buddies.yaml" file from the
-[latest release](PLACEHOLDER) to use as a template.
+[latest release](https://github.com/bmorledge-hampton19/bitty_buddies_apworld/releases/latest) to use as a template.
 Otherwise, you can use the Options Creator in the Archipelago Launcher for a more straight-forward interface.
 (This will only work if you have already installed the Bitty Buddies APWorld.)
 
