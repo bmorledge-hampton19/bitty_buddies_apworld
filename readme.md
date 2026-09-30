@@ -1,7 +1,7 @@
 # Bitty Buddies Archipelago
-This is the standalone Bitty Buddies Archipelago repository.
-If you're looking for the full Bitty Buddies fork of the main archipelago repository, you can find it
-[here](https://github.com/bmorledge-hampton19/Archipelago/tree/bitty_buddies)
+(This is the standalone repository for the Bitty Buddies APworld.
+If you're looking for the corresponding fork of the main archipelago repository, you can find it
+[here](https://github.com/bmorledge-hampton19/Archipelago/tree/bitty_buddies))
 
 ## What is Bitty Buddies?
 
