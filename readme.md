@@ -59,7 +59,7 @@ base game) but you can adjust this alongside the cartridge goal scores and logic
 
 ## How do I track my progress during the randomizer?
 
-All of the your progress in the randomizer can be tracked in-game. The check marks below each buddy icon on the
+All of your progress in the randomizer can be tracked in-game. The check marks below each buddy icon on the
 Bitty Boy represent the number of goal scores you have achieved in that buddy's cartridge. Also, remember that you
 will receive additional checks when you have achieved the first, second, third, and fourth goal scores across ALL
 cartridges (the "buddy power" checks). If you have silly and/or skill checks enabled, these will be represented
