@@ -104,3 +104,10 @@ Received death links can have one of two different effects, based on your settin
 
 Death link settings can be changed in-game from the Bitty Buddies Archipelago main menu.
 This includes the ability to enable/disable death link entirely, regardless of the settings in your yaml.
+
+## AI disclosure
+During the development of both the Bitty Buddies base game and the accompanying apworld, I did not incorporate the output
+of generative AI into any assets. AI was occasionally consulted (hard to ignore the ai overview on Google when they put
+it at the top of the results...), but code was always added manually by myself and tested directly, never copy-pasted
+wholesale and forgotten. I enjoy taking the time to understand the tools that I'm working with and build my codebase
+gradually and intentionally. I am confident that the impact of AI on Bitty Buddies and its apworld is extremely minimal.
