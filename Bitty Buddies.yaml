@@ -1,0 +1,238 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Player{number}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Bitty Buddies Template
+
+game: Bitty Buddies
+requires:
+  version: 0.6.7 # Version of Archipelago required for this yaml to work as expected.
+  game:
+    Bitty Buddies: 1.0.0 # Version of the world required for this yaml to work as expected.
+
+Bitty Buddies:
+  ################
+  # Game Options #
+  ################
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # 
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-99: 0 # random value between 0 and 99
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # 
+    # **Full:** ensure everything can be reached and acquired.
+    # 
+    # **Minimal:** ensure what is needed to reach your goal can be acquired.
+    full: 50
+    minimal: 0
+
+  cartridge_goal_scores:
+    # How high the goal scores are in each cartridge. There are three options:
+    # 
+    # Low (For shorter games):
+    # - Checks are obtained at scores of 3, 8, 15, 30, and 50
+    # 
+    # Regular (The standard Bitty Buddies experience):
+    # - Checks are obtained at scores of 5, 15, 30, 60, and 100
+    # 
+    # High (For longer games):
+    # - Checks are obtained at scores of 10, 25, 50, 100, and 150
+    low: 0
+    regular: 50
+    high: 0
+
+  logic_difficulty:
+    # How high each buddy is expected to score, based on the level and cartridge.
+    # 
+    # For example, at normal difficulty a level 1 Bud is only expected to score 6 points in Trash Dash,
+    # but at hard difficulty, a level 1 Bud is expected to score 14 points in Trash Dash (by clearing trash cans).
+    # 
+    # The following logic difficulties are recommended based on the value of the Level Up Scores option:
+    # - Low Scores: Easy logic
+    # - Regular Scores: Normal logic
+    # - High Scores: Hard Logic
+    # 
+    # *Note:* Choosing easy/normal logic with high level up scores may force more difficult logic in some cases.
+    easy: 0
+    normal: 50
+    hard: 0
+
+  final_goal_score:
+    # The score (totaled across all cartridges) that is required to beat the game.
+    # 
+    # The following goal scores are recommended based on the value of the Level Up Scores option:
+    # - Low Scores: 499
+    # - Regular Scores: 999
+    # - High Scores: 1499
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 1999
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-1999: 0 # random value between 1 and 1999
+    low: 0 # equivalent to 499
+    regular: 50 # equivalent to 999
+    high: 0 # equivalent to 1499
+
+  randomize_buddy_power:
+    # Randomizes Buddy Power increases.
+    # 
+    # Buddy Power checks are received when the goal scores for a given threshold are achieved across all cartridges.
+    # (I.e., when the 1st checks have been received in all cartridges.)
+    # If Buddy Power increases are not randomized, these checks will always increase buddy power, like the base game.
+    'false': 0
+    'true': 50
+
+  silly_checks:
+    # Adds a check for the "silly interaction" that each buddy has in one of their sub-optimal cartridges.
+    # (E.g., Bazz popping the tires on the cars in Treatment To-Go.
+    # See the Bitty Buddies Archipelago game page for more detailed information on each check.)
+    'false': 50
+    'true': 0
+
+  skill_checks:
+    # Adds a tricky check that each buddy has in one of their optimal cartridges.
+    # (E.g., Fly over a paper airplane with Brie in Trash Dash.
+    # See the Bitty Buddies Archipelago game page for more detailed information on each check.)
+    'false': 50
+    'true': 0
+
+  power_of_friendship_stash:
+    # Adds additional location checks which are sent when the randomizer is completed (This gives the game
+    # a more impactful release. Otherwise, Bitty Buddies tends to send all of its checks before completion.)
+    # 
+    # The maximum number of extra checks is 20, but keep in mind that the more checks are stashed, the
+    # more junk items (bonus points) are added to the multiworld.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 20
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-20: 0 # random value between 0 and 20
+    none: 50 # equivalent to 0
+    small: 0 # equivalent to 5
+    medium: 0 # equivalent to 10
+    large: 0 # equivalent to 15
+    max: 0 # equivalent to 20
+
+  death_link:
+    # Enables Death Link.
+    # 
+    # Death links are sent on game over if a new high score was not achieved,
+    # provided that no death links were received during the attempt.
+    'false': 50
+    'true': 0
+
+  death_link_behavior:
+    # Enable full (send and receive) or partial (send only; receive only) death link.
+    send_and_receive: 50
+    send_only: 0
+    receive_only: 0
+
+  death_link_receive_effect:
+    # Determines the effect of received death links.
+    # - Game Over: Death links trigger a game over.
+    # - Next Buddy: Death links trigger a transition to the next available buddy (as if the current buddy just failed).
+    #   If there are no buddies remaining for the current game, a game over is triggered.
+    game_over: 50
+    next_buddy: 0
+
+  death_link_receive_chance:
+    # Percentage chance that any received death links will actually impact you.
+    # This can make death link in larger archipelagos much more manageable.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  death_link_group:
+    # Restricts death link to players with the same group name.
+    # Leave blank to enable death link with all ungrouped players.
+    '': 50
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with the specified amount of these items. Example: "Bomb: 1"
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
+    []
