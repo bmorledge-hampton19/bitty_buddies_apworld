@@ -1,5 +1,5 @@
 # Bitty Buddies Archipelago
-(This is the standalone repository for the Bitty Buddies APworld.
+(This is the standalone repository for the Bitty Buddies APWorld.
 If you're looking for the corresponding fork of the main archipelago repository, you can find it
 [here](https://github.com/bmorledge-hampton19/Archipelago/tree/bitty_buddies))
 
@@ -15,7 +15,7 @@ in their own game, but with some experimentation, you'll find that their true ta
 You can play Bitty Buddies for free at https://mr-dr-bean.itch.io/bitty-buddies. The game can be played in-browser
 (even on a mobile device), or you can download it for Windows, MacOS, or Linux.
 
-## How do I install the Bitty Buddies APworld?
+## How do I install the Bitty Buddies APWorld?
 
 First, make sure that you have downloaded the latest
 [Archipelago release](https://github.com/ArchipelagoMW/Archipelago/releases/latest).
@@ -106,8 +106,8 @@ Death link settings can be changed in-game from the Bitty Buddies Archipelago ma
 This includes the ability to enable/disable death link entirely, regardless of the settings in your yaml.
 
 ## AI disclosure
-During the development of both the Bitty Buddies base game and the accompanying apworld, I did not incorporate the output
+During the development of both the Bitty Buddies base game and the accompanying APWorld, I did not incorporate the output
 of generative AI into any assets. AI was occasionally consulted (hard to ignore the ai overview on Google when they put
 it at the top of the results...), but code was always added manually by myself and tested directly, never copy-pasted
 wholesale and forgotten. I enjoy taking the time to understand the tools that I'm working with and build my codebase
-gradually and intentionally. I am confident that the impact of AI on Bitty Buddies and its apworld is extremely minimal.
+gradually and intentionally. I am confident that the impact of AI on Bitty Buddies and its APWorld is extremely minimal.
